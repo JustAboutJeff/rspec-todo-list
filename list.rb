@@ -7,6 +7,7 @@ class List
   end
 
   def add_task(task)
+    raise TypeError unless task.description
     tasks << task
   end
 
